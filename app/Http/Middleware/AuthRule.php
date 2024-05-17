@@ -13,12 +13,12 @@ class AuthRule
      *
      * @param  \Closure(\Illuminate\Http\Request): (\Symfony\Component\HttpFoundation\Response)  $next
      */
-    public function handle(Request $request, Closure $next): Response
-    {
-        if ($request->input('umar') !== '1313') {
-            return redirect()->back()->with('error', 'У вас нет прав для данной операции.');
-        }
-
-        return $next($request);
-    }
+//    public function handle(Request $request, Closure $next):
+//    {
+//        if ($request->input('umar') !== '1313') {
+//            return redirect()->back()->with('error', 'У вас нет прав для данной операции.');
+//        }
+//
+//        return $next($request);
+//    }
 }
